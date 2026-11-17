@@ -1,0 +1,116 @@
+[
+  {
+    "version_id": "temperature_v20261112_221304",
+    "model_type": "temperature",
+    "timestamp": "20261112_221304",
+    "datetime": "2026-11-12T22:13:04.585949",
+    "metrics": {
+      "mae": 0.1031675343656265,
+      "rmse": 0.16658836366786584,
+      "r2": 0.9950529844383593,
+      "cv_r2": 0.9955566947217781
+    },
+    "note": "Dataset: 42,600 records",
+    "files": [
+      "temperature_model.pkl",
+      "temp_scaler.pkl"
+    ]
+  },
+  {
+    "version_id": "rain_v20261112_221304",
+    "model_type": "rain",
+    "timestamp": "20261112_221304",
+    "datetime": "2026-11-12T22:13:04.588157",
+    "metrics": {
+      "accuracy": 0.9584507042253522,
+      "precision": 0.9474755700325733,
+      "recall": 0.911833855799373,
+      "f1": 0.9293130990415336
+    },
+    "note": "Dataset: 42,600 records",
+    "files": [
+      "rain_classifier.pkl",
+      "rain_scaler.pkl"
+    ]
+  },
+  {
+    "version_id": "risk_v20261112_221304",
+    "model_type": "risk",
+    "timestamp": "20261112_221304",
+    "datetime": "2026-11-12T22:13:04.590951",
+    "metrics": {
+      "accuracy": 0.9861502347417841
+    },
+    "note": "Dataset: 42,600 records",
+    "files": [
+      "risk_classifier.pkl",
+      "risk_scaler.pkl"
+    ]
+  },
+  {
+    "version_id": "temperature_v20261117_210523",
+    "model_type": "temperature",
+    "timestamp": "20261117_210523",
+    "datetime": "2026-11-17T21:05:23.364615",
+    "metrics": {
+      "mae": 0.10604262874765821,
+      "rmse": 0.17270913499100818,
+      "r2": 0.9947397071193393,
+      "cv_r2": 0.995550255820293
+    },
+    "note": "Dataset: 42,720 records",
+    "files": [
+      "temperature_model.pkl",
+      "temp_scaler.pkl"
+    ]
+  },
+  {
+    "version_id": "rain_v20261117_210523",
+    "model_type": "rain",
+    "timestamp": "20261117_210523",
+    "datetime": "2026-11-17T21:05:23.371844",
+    "metrics": {
+      "accuracy": 0.9584503745318352,
+      "precision": 0.943342776203966,
+      "recall": 0.915553809897879,
+      "f1": 0.9292405820211281
+    },
+    "note": "Dataset: 42,720 records",
+    "files": [
+      "rain_classifier.pkl",
+      "rain_scaler.pkl"
+    ]
+  },
+  {
+    "version_id": "risk_v20261117_210523",
+    "model_type": "risk",
+    "timestamp": "20261117_210523",
+    "datetime": "2026-11-17T21:05:23.381218",
+    "metrics": {
+      "accuracy": 0.987125468164794
+    },
+    "note": "Dataset: 42,720 records",
+    "files": [
+      "risk_classifier.pkl",
+      "risk_scaler.pkl"
+    ]
+  },
+  {
+    "version_id": "route_v20261117_210530",
+    "model_type": "route",
+    "timestamp": "20261117_210530",
+    "datetime": "2026-11-17T21:05:30.287399",
+    "metrics": {
+      "accuracy": 1.0,
+      "cv_accuracy": 1.0
+    },
+    "note": "Dataset: 180 samples",
+    "files": [
+      "route_safety_model.pkl",
+      "route_scaler.pkl",
+      "le_surface.pkl",
+      "le_vehicle.pkl",
+      "le_weather.pkl"
+    ]
+  }
+]

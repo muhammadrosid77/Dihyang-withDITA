@@ -1,0 +1,80 @@
+{
+  "model_type": "Random Forest Regressor",
+  "training_date": "2026-11-17T21:05:35.174966",
+  "n_samples": 1575,
+  "n_features": 12,
+  "n_users": 15,
+  "n_activities": 105,
+  "metrics": {
+    "train_rmse": 0.3296806419954081,
+    "test_rmse": 0.5211299800338399,
+    "train_mae": 0.257570847644342,
+    "test_mae": 0.41979499553277483,
+    "train_r2": 0.7903745422211753,
+    "test_r2": 0.46472147432220834
+  },
+  "feature_importance": [
+    {
+      "feature": "interest_match",
+      "importance": 0.39858168242325226
+    },
+    {
+      "feature": "priority_score",
+      "importance": 0.14346480200226017
+    },
+    {
+      "feature": "vehicle_compatible",
+      "importance": 0.12948505961630324
+    },
+    {
+      "feature": "cost",
+      "importance": 0.09692456038227423
+    },
+    {
+      "feature": "style_encoded",
+      "importance": 0.06728510676987891
+    },
+    {
+      "feature": "duration",
+      "importance": 0.05512373138061982
+    },
+    {
+      "feature": "user_budget",
+      "importance": 0.033790244659849304
+    },
+    {
+      "feature": "budget_encoded",
+      "importance": 0.024396841566561668
+    },
+    {
+      "feature": "vehicle_encoded",
+      "importance": 0.020698381868089297
+    },
+    {
+      "feature": "type_encoded",
+      "importance": 0.014640884113162037
+    },
+    {
+      "feature": "physical_encoded",
+      "importance": 0.009678314625935668
+    },
+    {
+      "feature": "weather_sensitive",
+      "importance": 0.00593039059181344
+    }
+  ],
+  "feature_columns": [
+    "cost",
+    "duration",
+    "priority_score",
+    "weather_sensitive",
+    "user_budget",
+    "interest_match",
+    "vehicle_compatible",
+    "budget_encoded",
+    "style_encoded",
+    "vehicle_encoded",
+    "type_encoded",
+    "physical_encoded"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "project": "DITA - Dieng Intelligence Tourism Assistant",
+  "team": "PJK-GM067",
+  "ai_engineer": "Ida Masruroh (APC466D6X0040)",
+  "dataset": {
+    "source": "Open-Meteo Historical Weather API",
+    "data_source_detail": "combined multi-year",
+    "location": "Dieng Plateau (-7.2056, 109.8731)",
+    "elevation": "2.060m",
+    "total_records": 42720,
+    "features_engineered": 32,
+    "new_variables": [
+      "humidity",
+      "dewpoint",
+      "windspeed",
+      "cloudcover",
+      "visibility_km",
+      "apparent_temp",
+      "fog_risk_score",
+      "temp_dewpoint_spread"
+    ]
+  },
+  "models": {
+    "temperature_prediction": {
+      "type": "Random Forest Regressor",
+      "n_estimators": 200,
+      "test_split": "20%",
+      "metrics": {
+        "mae": 0.10604262874765821,
+        "rmse": 0.17270913499100818,
+        "r2": 0.9947397071193393,
+        "cv_r2": 0.995550255820293
+      }
+    },
+    "rain_prediction": {
+      "type": "Gradient Boosting Classifier",
+      "n_estimators": 200,
+      "test_split": "20%",
+      "metrics": {
+        "accuracy": 0.9584503745318352,
+        "precision": 0.943342776203966,
+        "recall": 0.915553809897879,
+        "f1": 0.9292405820211281
+      }
+    },
+    "risk_classification": {
+      "type": "Gradient Boosting Classifier",
+      "n_estimators": 200,
+      "classes": [
+        "Aman",
+        "Waspada",
+        "Bahaya"
+      ],
+      "test_split": "20%",
+      "metrics": {
+        "accuracy": 0.987125468164794
+      }
+    }
+  }
+}

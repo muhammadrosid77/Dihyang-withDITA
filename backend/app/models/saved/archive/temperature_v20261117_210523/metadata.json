@@ -1,0 +1,17 @@
+{
+  "version_id": "temperature_v20261117_210523",
+  "model_type": "temperature",
+  "timestamp": "20261117_210523",
+  "datetime": "2026-11-17T21:05:23.364615",
+  "metrics": {
+    "mae": 0.10604262874765821,
+    "rmse": 0.17270913499100818,
+    "r2": 0.9947397071193393,
+    "cv_r2": 0.995550255820293
+  },
+  "note": "Dataset: 42,720 records",
+  "files": [
+    "temperature_model.pkl",
+    "temp_scaler.pkl"
+  ]
+}

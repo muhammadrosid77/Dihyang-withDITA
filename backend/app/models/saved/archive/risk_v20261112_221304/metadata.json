@@ -1,0 +1,14 @@
+{
+  "version_id": "risk_v20261112_221304",
+  "model_type": "risk",
+  "timestamp": "20261112_221304",
+  "datetime": "2026-11-12T22:13:04.590951",
+  "metrics": {
+    "accuracy": 0.9861502347417841
+  },
+  "note": "Dataset: 42,600 records",
+  "files": [
+    "risk_classifier.pkl",
+    "risk_scaler.pkl"
+  ]
+}
