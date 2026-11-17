@@ -165,12 +165,11 @@ npm run dev
 ```
 
 ### 3. Environment Variables
-Buat berkas `backend/.env` untuk backend:
-```env
-ENVIRONMENT=development
-GEMINI_API_KEY=your_gemini_api_key_here
-ALLOWED_ORIGINS=http://localhost:5173
+Salin `backend/.env.example` menjadi `backend/.env`, lalu isi `GEMINI_API_KEY` jika ingin mengaktifkan jawaban AI DITA:
+```powershell
+Copy-Item backend\.env.example backend\.env
 ```
+Jangan commit `backend/.env` atau membagikan API key. Tanpa key, backend tetap dapat dijalankan tetapi fitur Gemini DITA tidak tersedia.
 
 Buat berkas `frontend/.env` untuk frontend (jika ingin mengubah alamat host backend):
 ```env
